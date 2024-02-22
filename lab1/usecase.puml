@@ -1,0 +1,8 @@
+@startuml Usecases
+
+' see https://plantuml.com/use-case-diagram
+
+usecase (usecasee) as UC1
+usecase (Last\nusecase) as UC2
+
+@enduml
