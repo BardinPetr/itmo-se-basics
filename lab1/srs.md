@@ -1,5 +1,45 @@
 # Software Requirements Specification
 
+<!-- TOC -->
+* [Software Requirements Specification](#software-requirements-specification)
+  * [Introduction](#introduction)
+    * [Purpose](#purpose)
+    * [Scope](#scope)
+    * [Definitions, Acronyms and Abbreviations](#definitions-acronyms-and-abbreviations)
+    * [References](#references)
+    * [Overview](#overview)
+  * [Overall Description](#overall-description)
+    * [Product functions](#product-functions)
+    * [User characteristics](#user-characteristics)
+    * [Assumptions and dependencies](#assumptions-and-dependencies)
+    * [Сonstraints](#сonstraints)
+  * [Specific Requirements](#specific-requirements)
+    * [Functionality](#functionality)
+      * [FR0 - NAME](#fr0---name)
+        * [Аттрибуты требования](#аттрибуты-требования)
+          * [Риски](#риски)
+          * [Трудоемкость](#трудоемкость)
+        * [Прецеденты использования](#прецеденты-использования)
+    * [Security](#security)
+      * [<Требование 1>](#требование-1)
+    * [Usability](#usability)
+      * [<Требование 1>](#требование-1-1)
+    * [Reliability](#reliability)
+      * [<Требование 1>](#требование-1-2)
+    * [Performance](#performance)
+      * [<Требование 1>](#требование-1-3)
+    * [Design Constraints](#design-constraints)
+      * [<Требование 1>](#требование-1-4)
+    * [Supportability constraints](#supportability-constraints)
+      * [<Требование 1>](#требование-1-5)
+    * [Interfaces](#interfaces)
+      * [User Interfaces (Пользовательские интерфейсы)](#user-interfaces-пользовательские-интерфейсы)
+      * [Hardware Interfaces (Аппаратные интерфейсы)](#hardware-interfaces-аппаратные-интерфейсы)
+      * [Software Interfaces (Программные интерфейсы)](#software-interfaces-программные-интерфейсы)
+      * [Communications Interfaces (Сетевые интерфейсы)](#communications-interfaces-сетевые-интерфейсы)
+    * [Licensing Requirements](#licensing-requirements)
+<!-- TOC -->
+
 [Example](https://www.cse.chalmers.se/~feldt/courses/reqeng/examples/srs_example_2010_group2.pdf)
 
 ## Introduction
@@ -54,6 +94,41 @@
 
 [Данный раздел содержит описание функциональных требований к системе.]
 
+#### FR0 - NAME
+
+[Описание требования.]
+
+##### Аттрибуты требования
+
+| Аттрибут       | Значение                                                                   |
+|----------------|----------------------------------------------------------------------------|
+| Приоритет      | M/S/C/W                                                                    |
+| Статус         | Предложенный/Одобренный/Отклоненный/Включенный                             |
+| Стабильность   | Высокая/Средняя/Низкая                                                     |
+| Целевая версия |                                                                            |
+| Риск           | Прямой/Непрямой/Регулярный/Бизнес-риск/Технический/Политический/Форс-мажор |
+| Трудоемкость   |                                                                            |
+
+###### Риски
+
+###### Трудоемкость
+
+##### Прецеденты использования
+
+| Прецедент             | NAME |
+|-----------------------|------|
+| ID                    |      |
+| Описание              |      |
+| Главные акторы        |      |
+| Второстепенные акторы |      |
+| Основной поток        |      |
+
+![Usecase Diagram](./images/dist/FR0_UC0.png)
+
+### Security
+
+[Данный раздел содержит описание требований к безопасности.]
+
 #### <Требование 1>
 
 [Описание требования: “Система должна…”]
@@ -85,6 +160,14 @@
 ### Design Constraints
 
 [Данный раздел содержит все требования к процессу разработки. Например, используемый язык программирования, требования к процессу разработки (методологии), выбранные инструменты разработки, использование сторонних библиотек и т.д.]
+
+#### <Требование 1>
+
+[Описание требования.]
+
+### Supportability constraints
+
+[Условия поддержки (пример: способность обновлять ПО без остановки функционала)]
 
 #### <Требование 1>
 
