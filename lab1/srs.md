@@ -33,10 +33,10 @@
     * [Supportability constraints](#supportability-constraints)
       * [<Требование 1>](#требование-1-5)
     * [Interfaces](#interfaces)
-      * [User Interfaces (Пользовательские интерфейсы)](#user-interfaces-пользовательские-интерфейсы)
-      * [Hardware Interfaces (Аппаратные интерфейсы)](#hardware-interfaces-аппаратные-интерфейсы)
-      * [Software Interfaces (Программные интерфейсы)](#software-interfaces-программные-интерфейсы)
-      * [Communications Interfaces (Сетевые интерфейсы)](#communications-interfaces-сетевые-интерфейсы)
+      * [User Interfaces](#user-interfaces)
+      * [Hardware Interfaces](#hardware-interfaces)
+      * [Software Interfaces](#software-interfaces)
+      * [Communications Interfaces](#communications-interfaces)
     * [Licensing Requirements](#licensing-requirements)
 <!-- TOC -->
 
@@ -177,19 +177,19 @@
 
 [Данный раздел описывает интерфейсы, которые должна поддерживать система].
 
-#### User Interfaces (Пользовательские интерфейсы)
+#### User Interfaces
 
 [Описание пользовательского интерфейса системы.]
 
-#### Hardware Interfaces (Аппаратные интерфейсы)
+#### Hardware Interfaces
 
 [Описание аппаратных интерфейсов системы - физические адреса и т.д.]
 
-#### Software Interfaces (Программные интерфейсы)
+#### Software Interfaces
 
 [Описание интерфейсов, связывающих данную систему с другими приложениями.]
 
-#### Communications Interfaces (Сетевые интерфейсы)
+#### Communications Interfaces
 
 [Описание сетевых интерфейсов, которые используются системой для связи с другими устройствами.]
 
