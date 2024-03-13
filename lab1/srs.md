@@ -33,70 +33,74 @@
 # Software Requirements Specification
 
 <!-- TOC -->
-
 * [Лабораторная работа по дисциплине "Основы программной инженерии"](#лабораторная-работа-по-дисциплине-основы-программной-инженерии)
 * [Задание](#задание)
 * [Вывод](#вывод)
 * [Software Requirements Specification](#software-requirements-specification)
-    * [Introduction](#introduction)
-        * [Purpose](#purpose)
-        * [Scope](#scope)
-        * [Definitions, Acronyms and Abbreviations](#definitions-acronyms-and-abbreviations)
-        * [References](#references)
-        * [Overview](#overview)
-    * [Overall Description](#overall-description)
-        * [Product functions](#product-functions)
-        * [User characteristics](#user-characteristics)
-        * [Assumptions and dependencies](#assumptions-and-dependencies)
-        * [Constraints](#constraints)
-    * [Specific Requirements](#specific-requirements)
-        * [Functionality](#functionality)
-            * [FR0 - NAME](#fr0---name)
-                * [Трудоемкость](#трудоемкость)
-                * [Прецеденты использования](#прецеденты-использования)
-            * [ID: FR0](#id-fr0)
-            * [ID: FR1](#id-fr1)
-            * [ID: FR2](#id-fr2)
-            * [ID: FR3](#id-fr3)
-            * [ID: FR4](#id-fr4)
-            * [ID: FR5](#id-fr5)
-            * [ID: FR6](#id-fr6)
-        * [Security](#security)
-            * [ID: SEC1](#id-sec1)
-            * [ID: SEC2](#id-sec2)
-            * [ID: SEC3](#id-sec3)
-            * [ID: SEC4](#id-sec4)
-        * [Usability](#usability)
-            * [ID: QR1](#id-qr1)
-            * [ID: QR2](#id-qr2)
-            * [ID: QR3](#id-qr3)
-            * [ID: QR4](#id-qr4)
-            * [ID: QR5](#id-qr5)
-        * [Reliability](#reliability)
-            * [ID: REL1](#id-rel1)
-            * [ID: REL2](#id-rel2)
-        * [Performance](#performance)
-            * [ID: PERF1](#id-perf1)
-            * [ID: PERF2](#id-perf2)
-            * [ID: PERF3](#id-perf3)
-            * [ID: PERF4](#id-perf4)
-            * [ID: PERF5](#id-perf5)
-            * [ID: PERF6](#id-perf6)
-        * [Design Constraints](#design-constraints)
-            * [ID: DC1](#id-dc1)
-            * [ID: DC2](#id-dc2)
-            * [ID: DC3](#id-dc3)
-        * [Supportability constraints](#supportability-constraints)
-            * [ID: SUPP1](#id-supp1)
-            * [ID: SUPP2](#id-supp2)
-            * [ID: SUPP3](#id-supp3)
-        * [Interfaces](#interfaces)
-            * [User Interfaces](#user-interfaces)
-            * [Hardware Interfaces](#hardware-interfaces)
-            * [Software Interfaces](#software-interfaces)
-            * [Communications Interfaces](#communications-interfaces)
-        * [Licensing Requirements](#licensing-requirements)
-
+  * [Introduction](#introduction)
+    * [Purpose](#purpose)
+    * [Scope](#scope)
+    * [Definitions, Acronyms and Abbreviations](#definitions-acronyms-and-abbreviations)
+    * [References](#references)
+    * [Overview](#overview)
+  * [Overall Description](#overall-description)
+    * [Product functions](#product-functions)
+    * [User characteristics](#user-characteristics)
+    * [Assumptions and dependencies](#assumptions-and-dependencies)
+    * [Constraints](#constraints)
+  * [Specific Requirements](#specific-requirements)
+    * [Functionality](#functionality)
+        * [Прецеденты использования](#прецеденты-использования)
+      * [ID: FR1](#id-fr1)
+      * [ID: FR2](#id-fr2)
+      * [ID: FR3](#id-fr3)
+      * [ID: FR4](#id-fr4)
+      * [ID: FR5](#id-fr5)
+      * [ID: FR6](#id-fr6)
+      * [ID: FR7](#id-fr7)
+      * [ID: FR8](#id-fr8)
+      * [ID: FR9](#id-fr9)
+      * [ID: FR10](#id-fr10)
+      * [ID: FR11](#id-fr11)
+      * [ID: FR12](#id-fr12)
+      * [ID: FR13](#id-fr13)
+      * [ID: FR14](#id-fr14)
+      * [ID: FR15](#id-fr15)
+    * [Security](#security)
+      * [ID: SEC1](#id-sec1)
+      * [ID: SEC2](#id-sec2)
+      * [ID: SEC3](#id-sec3)
+      * [ID: SEC4](#id-sec4)
+    * [Usability](#usability)
+      * [ID: QR1](#id-qr1)
+      * [ID: QR2](#id-qr2)
+      * [ID: QR3](#id-qr3)
+      * [ID: QR4](#id-qr4)
+      * [ID: QR5](#id-qr5)
+    * [Reliability](#reliability)
+      * [ID: REL1](#id-rel1)
+      * [ID: REL2](#id-rel2)
+    * [Performance](#performance)
+      * [ID: PERF1](#id-perf1)
+      * [ID: PERF2](#id-perf2)
+      * [ID: PERF3](#id-perf3)
+      * [ID: PERF4](#id-perf4)
+      * [ID: PERF5](#id-perf5)
+      * [ID: PERF6](#id-perf6)
+    * [Design Constraints](#design-constraints)
+      * [ID: DC1](#id-dc1)
+      * [ID: DC2](#id-dc2)
+      * [ID: DC3](#id-dc3)
+    * [Supportability constraints](#supportability-constraints)
+      * [ID: SUPP1](#id-supp1)
+      * [ID: SUPP2](#id-supp2)
+      * [ID: SUPP3](#id-supp3)
+    * [Interfaces](#interfaces)
+      * [User Interfaces](#user-interfaces)
+      * [Hardware Interfaces](#hardware-interfaces)
+      * [Software Interfaces](#software-interfaces)
+      * [Communications Interfaces](#communications-interfaces)
+    * [Licensing Requirements](#licensing-requirements)
 <!-- TOC -->
 
 ## Introduction
@@ -175,135 +179,7 @@
 
 Данный раздел содержит описание функциональных требований к системе.
 
-#### FR0 - NAME
-
-[Описание требования.]
-
-###### Трудоемкость
-
-##### Прецеденты использования
-
-| Прецедент             | NAME |
-|-----------------------|------|
-| ID                    |      |
-| Описание              |      |
-| Главные акторы        |      |
-| Второстепенные акторы |      |
-| Основной поток        |      |
-
 ![Usecase Diagram](./images/dist/FR0_UC0.png)
-
-[comment]: <> (
-+ Находить сайт по ссылке
-+ Регистрироваться через google
-+ Создавать и редактировать вопросы (добавлять теги и тп\)
-+ Создавать и редактировать ответы
-+ Ставить +1 или -1 к рейтингу ответа на вопрос
-+ Видеть похожие вопросы
-+ Создание организаций
-репутация пользователей
-улучшение постов
-Система вознаграждений
-Поиск вопросов
-Фильтрация вопросов
-Поиск по тегам
-Модерация постов
-Репорты
-)
-
-<!--
-#### ID: FR0
-
-TITLE: Публикация сайта в интернете
-
-DESC: Пользователи должны иметь возможность найти сайт в сети по запросу имени сайта
-или по тексту вопросов внутри системы.
-
-RAT: Пользователи для начала должны найти сайт
-
-DEP: -
-
-#### ID: FR1
-
-TITLE: Регистрация и авторизация
-
-DESC: Пользователи должны иметь возможность создавать аккаунта с помощью почты или
-входить в систему с помощью сторонних сервисов: Google, Facebook.
-В подсистеме (stackoverflow) предназначенной для программирования должна быть возможность авторизоваться через Github.
-В подсистеме (askubuntu) предназначенной для пользователей Ubuntu OS
-должна быть возможность авторизоваться через Launchpad.
-
-RAT: Благодаря этому пользователи смогут оставлять комментарии и ответы под собственным именем.
-
-DEP: FR0
-
-#### ID: FR2
-
-TITLE: публикация вопросов
-
-DESC: Система должна предоставлять возможность создавать и редактировать вопросы.
-Также должна быть возможность добавлять теги. Более того на сайтах должны отображаться
-похожие вопросы по схожей тематике.
-
-RAT: Пользователи пользуются этой системой для поиска ответов на свои вопросы
-
-DEP: FR0
-
-#### ID: FR3
-
-TITLE: публикация ответов
-
-DESC: Система должна предоставлять возможность создавать и редактировать ответы и комментарии к ответам пользователей.
-
-RAT: Пользователи пользуются этой системой для поиска ответов на свои вопросы
-
-DEP: FR2
-
-#### ID: FR4
-
-TITLE: рейтинг ответов
-
-DESC: Пользователи должны иметь возможность отмечать плохие (-1 к рейтингу) и хорошие (+1 к рейтингу).
-Ответы должны представляться в отсортированном виде.
-
-RAT: Благодаря этому пользователи смогут увидеть правильные ответы выше.
-
-DEP: FR3
-
-#### ID: FR5
-
-TITLE: Отображение рекламы
-
-DESC: Пользователи должны иметь возможность отмечать плохие (-1 к рейтингу) и хорошие (+1 к рейтингу).
-Ответы должны представляться в отсортированном виде.
-
-RAT: Благодаря этому пользователи смогут увидеть правильные ответы выше.
-
-DEP: FR1
-
-#### ID: FR6
-
-TITLE: Создание компаний
-
-DESC: Организации могут отправлять заявку на создание внутренней компании.
-
-RAT: Это позволит вести обсуждения под своей эгидой. Также это даст возможность создания
-локальных систем для конкретной организации.
-
-DEP: FR1
-
-#### ID: FR6
-
-TITLE: Создание компаний
-
-DESC: Организации могут отправлять заявку на создание внутренней компании.
-
-RAT: Это позволит вести обсуждения под своей эгидой. Также это даст возможность создания
-локальных систем для конкретной организации.
-
-DEP: FR1
-)
--->
 
 #### ID: FR1
 
@@ -417,7 +293,7 @@ DEP: FR1
 **DESC:** Пользователь должен иметь возможность просмотреть все вопросы по заданному тегу
 
 **RAT:** Через поиск по тегам реализуется группировка вопросов по подтемам, что позволяет, например, легче отвечать
-на вопросы, так как отвечающий пользователь может имеет конкретную область специализации.
+на вопросы, так как отвечающий пользователь может иметь конкретную область специализации.
 
 #### ID: FR14
 
