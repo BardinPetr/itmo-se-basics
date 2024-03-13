@@ -385,13 +385,31 @@ DEP: FR1
 
 ### Design Constraints
 
-[Данный раздел содержит все требования к процессу разработки. Например, используемый язык программирования, требования к процессу разработки (методологии), выбранные инструменты разработки, использование сторонних библиотек и т.д.]
+#### ID: QR
+
+**TITLE:** используемые технологии разработки ядра
+
+**DESC:** Ядро написано с помощью стека WISC
+* W = Windows
+* I = Internet Information Services (IIS)
+* S = SQL Server
+* C = C#
 
 #### ID: QR
 
-**TITLE:** используемые технологии разработки
+**TITLE:** используемые инструменты разработки ПО
 
-**DESC:** С#, фреймворк ASP.NET
+**DESC:** Программное обеспечение написано с помощью следующих иструментов
+
+* **IDE** Visual Studio 2019
+* **Framework** Microsoft .NET 6.0
+* **Web Framework** ASP.NET Core 6.0 with MiniProfiler
+* **View Engine** Razor
+* **Browser Framework** jQuery 1.12.4
+* **Data Access Layer** Entity Framework Core 2.2 and Dapper
+* **Cache / Additional Data** redis 4.0.7 via StackExchange.Redis
+* **Source Control** Git using a GitHub Enterprise instance
+* **Compare Tool** Beyond Compare 4
 
 #### ID: QR
 
@@ -401,13 +419,7 @@ DEP: FR1
 
 **RAT:** пользователь должен иметь возможность искать ответы используя нечеткие текстовые запросы
 
-#### ID: QR
 
-**TITLE:** 
-
-**DESC:** 
-
-**RAT:** 
 
 
 ### Supportability constraints
