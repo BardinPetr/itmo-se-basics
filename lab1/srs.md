@@ -28,63 +28,64 @@
 # Вывод
 
 ВЫВОД
-
+Мы уверены, что полученные знания помогут нам в планировании требований для захвата Монголии.
 # Software Requirements Specification
 
 <!-- TOC -->
-
 * [Лабораторная работа по дисциплине "Основы программной инженерии"](#лабораторная-работа-по-дисциплине-основы-программной-инженерии)
 * [Задание](#задание)
 * [Вывод](#вывод)
 * [Software Requirements Specification](#software-requirements-specification)
-    * [Introduction](#introduction)
-        * [Purpose](#purpose)
-        * [Scope](#scope)
-        * [Definitions, Acronyms and Abbreviations](#definitions-acronyms-and-abbreviations)
-        * [References](#references)
-        * [Overview](#overview)
-    * [Overall Description](#overall-description)
-        * [Product functions](#product-functions)
-        * [User characteristics](#user-characteristics)
-        * [Assumptions and dependencies](#assumptions-and-dependencies)
-        * [Constraints](#constraints)
-    * [Specific Requirements](#specific-requirements)
-        * [Functionality](#functionality)
-            * [FR0 - NAME](#fr0---name)
-                * [Трудоемкость](#трудоемкость)
-                * [Прецеденты использования](#прецеденты-использования)
-            * [ID: FR0](#id-fr0)
-            * [ID: FR1](#id-fr1)
-            * [ID: FR2](#id-fr2)
-            * [ID: FR3](#id-fr3)
-            * [ID: FR4](#id-fr4)
-            * [ID: FR5](#id-fr5)
-            * [ID: FR6](#id-fr6)
-        * [Security](#security)
-            * [<Требование 1>](#требование-1)
-        * [Usability](#usability)
-            * [ID: QR1](#id-qr1)
-            * [ID: QR2](#id-qr2)
-            * [ID: QR3](#id-qr3)
-            * [ID: QR4](#id-qr4)
-        * [Reliability](#reliability)
-            * [ID: QR](#id-qr)
-            * [ID: QR](#id-qr-1)
-        * [Performance](#performance)
-            * [ID: QR](#id-qr-2)
-            * [ID: QR](#id-qr-3)
-        * [Design Constraints](#design-constraints)
-            * [ID: QR](#id-qr-4)
-            * [ID: QR](#id-qr-5)
-        * [Supportability constraints](#supportability-constraints)
-            * [<Требование 1>](#требование-1-1)
-        * [Interfaces](#interfaces)
-            * [User Interfaces](#user-interfaces)
-            * [Hardware Interfaces](#hardware-interfaces)
-            * [Software Interfaces](#software-interfaces)
-            * [Communications Interfaces](#communications-interfaces)
-        * [Licensing Requirements](#licensing-requirements)
-
+  * [Introduction](#introduction)
+    * [Purpose](#purpose)
+    * [Scope](#scope)
+    * [Definitions, Acronyms and Abbreviations](#definitions-acronyms-and-abbreviations)
+    * [References](#references)
+    * [Overview](#overview)
+  * [Overall Description](#overall-description)
+    * [Product functions](#product-functions)
+    * [User characteristics](#user-characteristics)
+    * [Assumptions and dependencies](#assumptions-and-dependencies)
+    * [Constraints](#constraints)
+  * [Specific Requirements](#specific-requirements)
+    * [Functionality](#functionality)
+      * [FR0 - NAME](#fr0---name)
+          * [Трудоемкость](#трудоемкость)
+        * [Прецеденты использования](#прецеденты-использования)
+      * [ID: FR0](#id-fr0)
+      * [ID: FR1](#id-fr1)
+      * [ID: FR2](#id-fr2)
+      * [ID: FR3](#id-fr3)
+      * [ID: FR4](#id-fr4)
+      * [ID: FR5](#id-fr5)
+      * [ID: FR6](#id-fr6)
+    * [Security](#security)
+      * [<Требование 1>](#требование-1)
+    * [Usability](#usability)
+      * [ID: QR1](#id-qr1)
+      * [ID: QR2](#id-qr2)
+      * [ID: QR3](#id-qr3)
+      * [ID: QR4](#id-qr4)
+    * [Reliability](#reliability)
+      * [ID: QR](#id-qr)
+      * [ID: QR](#id-qr-1)
+    * [Performance](#performance)
+      * [ID: QR](#id-qr-2)
+      * [ID: QR](#id-qr-3)
+      * [ID: QR](#id-qr-4)
+    * [Design Constraints](#design-constraints)
+      * [ID: QR](#id-qr-5)
+      * [ID: QR](#id-qr-6)
+      * [ID: QR](#id-qr-7)
+    * [Supportability constraints](#supportability-constraints)
+      * [ID: QR](#id-qr-8)
+      * [ID: QR](#id-qr-9)
+    * [Interfaces](#interfaces)
+      * [User Interfaces](#user-interfaces)
+      * [Hardware Interfaces](#hardware-interfaces)
+      * [Software Interfaces](#software-interfaces)
+      * [Communications Interfaces](#communications-interfaces)
+    * [Licensing Requirements](#licensing-requirements)
 <!-- TOC -->
 
 ## Introduction
@@ -358,6 +359,24 @@ DEP: FR1
 
 **RAT:** пользователь должен легко определять ценность представляемых ответов
 
+**DEP:** -
+
+#### ID: QR5
+
+**TITLE:** ТОП в поисковике
+
+**DESC:** наша система должна быть одной из первых ссылок при поиске вопросов соответствующих тематик.
+
+**RAT:** Это позволит пользователям чаще пользоваться нашей системой.
+Что, в свою очередь, позволит увеличить количество пользователей, задающих вопросы и публикующих ответы.
+Это напрямую влияет на развитие системы.
+
+**MUST:** < 6 места
+
+**SHOULD:** < 4 места 
+
+**COULD:** < 1 место
+
 ### Reliability
 
 #### ID: REL1
@@ -432,13 +451,31 @@ DEP: FR1
 
 ### Design Constraints
 
-[Данный раздел содержит все требования к процессу разработки. Например, используемый язык программирования, требования к процессу разработки (методологии), выбранные инструменты разработки, использование сторонних библиотек и т.д.]
+#### ID: QR
+
+**TITLE:** используемые технологии разработки ядра
+
+**DESC:** Ядро написано с помощью стека WISC
+* W = Windows
+* I = Internet Information Services (IIS)
+* S = SQL Server
+* C = C#
 
 #### ID: QR
 
-**TITLE:** используемые технологии разработки
+**TITLE:** используемые инструменты разработки ПО
 
-**DESC:** С#, фреймворк ASP.NET
+**DESC:** Программное обеспечение написано с помощью следующих иструментов
+
+* **IDE** Visual Studio 2019
+* **Framework** Microsoft .NET 6.0
+* **Web Framework** ASP.NET Core 6.0 with MiniProfiler
+* **View Engine** Razor
+* **Browser Framework** jQuery 1.12.4
+* **Data Access Layer** Entity Framework Core 2.2 and Dapper
+* **Cache / Additional Data** redis 4.0.7 via StackExchange.Redis
+* **Source Control** Git using a GitHub Enterprise instance
+* **Compare Tool** Beyond Compare 4
 
 #### ID: QR
 
@@ -448,15 +485,25 @@ DEP: FR1
 
 **RAT:** пользователь должен иметь возможность искать ответы используя нечеткие текстовые запросы
 
-#### ID: QR
 
-**TITLE:**
 
-**DESC:**
-
-**RAT:**
 
 ### Supportability constraints
+
+#### ID: QR
+
+**TITLE:** Общий code style для C#
+
+**DESC:** Исходный код на C# должен соответствовать соглашению компании Microsoft
+
+**RAT:** Это повысит читаемость всего кода, тк он будет в одном стиле.
+
+#### ID: QR
+
+**TITLE:** Наличие автоматических тестов и  CI/CD.
+
+**DESC:** При развёртывании системы должны автоматически запускаться тесты,
+которые позволят сразу же обнаружить некоторые ошибки. 
 
 #### ID: QR
 
@@ -468,19 +515,33 @@ DEP: FR1
 **RAT:** пользователи не должны испытывать неудобств при проведении плановых и внеплановых работ
 на инфраструктуре системы
 
-#### ID: QR
-
-**TITLE:**
-
-**DESC:**
-
-**RAT:**
 
 ### Interfaces
 
 #### User Interfaces
 
+При открытии сайта сверху пользователь видит строку ~~пёсика~~ поиска. 
+Рядом со строкой поиска пользователь может увидеть кнопку входа в аккаунт.
+Пользователь может войти в систему с помощью логина и пароля или через сторонние сервисы.
+На основной части экрана будут распложаться вопросы, которые система выдала под запрос или
+общая информация и системе.
+
+Когда пользователь открывает конкретный вопрос. Сверху он видит сам текст вопроса со всеми
+прикреплёнными изображениями. Под ним располагаются ответы других пользователей. 
+Под каждым из ответов авторизованный пользователь может оставить свой комментарий,
+кликнув по соответствующей кнопке.
+Так же на странице вопроса авторизованный пользователь может оставить свой ответ.
+
+На странице своего аккаунта пользователь видит свой рейтинг, количество собственных
+вопросов и ответов.
+
 #### Hardware Interfaces
+
+Так наша система не зависит от конкретного аппаратного обеспечения,
+ то у нас в ней не будет аппаратных интерфейсов (Hardware Interfaces).
+Отсутствие зависимости от конкретного оборудования обозначает возможность
+использования любого аппаратного обеспечения, удовлетворяющее требованиям.
+В том числе и виртуальных. Например, Docker.
 
 #### Software Interfaces
 
