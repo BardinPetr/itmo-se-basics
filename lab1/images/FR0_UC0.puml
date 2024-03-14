@@ -1,8 +1,23 @@
-@startuml FR0_UC0
+@startuml
+title StackExchange UseCases
 
-' see https://plantuml.com/use-case-diagram
+left to right direction
 
-usecase (usecasee) as UC1
-usecase (Last\nusecase) as UC2
+actor "Anonymous" as NAU
+actor "Authorized user" as AU
+actor "Guest user" as GU
+
+actor Asker as ASK_U
+actor Answerer as ANS_U
+actor Searcher as SEA_U
+actor Moderator as MOD_U
+
+ASK_U --|> AU
+ANS_U --|> AU
+ANS_U --|> GU
+SEA_U --|> NAU
+SEA_U --|> AU
+MOD_U --|> AU
+
 
 @enduml
