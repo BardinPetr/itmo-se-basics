@@ -1,5 +1,9 @@
 # Лабораторная работа #1. ОПИ. Вариант 32191
 
+[**Отчет**](./srs.md)
+
+[**Отчет PDF**](./srs.pdf)
+
 > [stackexchange.com](https://stackexchange.com/): Stack Exchange Q&A communities are different.
 
 ## Задание
