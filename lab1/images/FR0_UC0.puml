@@ -12,12 +12,76 @@ actor Answerer as ANS_U
 actor Searcher as SEA_U
 actor Moderator as MOD_U
 
-ASK_U --|> AU
-ANS_U --|> AU
-ANS_U --|> GU
-SEA_U --|> NAU
-SEA_U --|> AU
-MOD_U --|> AU
+ASK_U -l-|> AU
+ANS_U -l-|> AU
+ANS_U -l-|> GU
+SEA_U -l-|> NAU
+SEA_U -l-|> AU
+MOD_U -l-|> AU
 
+
+usecase "Ask Questions" as UC1
+ASK_U --> UC1
+note right of UC1
+  Asker can ask questions
+  about a specific topic.
+end note
+
+usecase "Answer Questions" as UC2
+ANS_U --> UC2
+note right of UC2
+  Answerer can provide answers
+  to existing questions.
+end note
+
+usecase "Vote on Questions and Answers" as UC3
+ASK_U --> UC3
+ANS_U --> UC3
+note right of UC3
+  Asker and Answerer can upvote
+  or downvote questions and answers
+  based on their quality.
+
+end note
+note right of UC3
+  Asker and Answerer can add comments to
+  questions and answers for
+  clarification or additional info.
+end note
+
+usecase "Comment on Questions and Answers" as UC4
+ASK_U --> UC4
+ANS_U --> UC4
+note right of UC4
+  Asker who asked a question
+  can accept an answer that
+  they find most helpful.
+end note
+
+usecase "Accept Answers" as UC5
+ASK_U --> UC5
+note right of UC5
+  Searcher can search for
+  existing questions and answers.
+end note
+
+usecase "Search for Questions" as UC6
+SEA_U --> UC6
+note right of UC6
+  Moderator can review and
+  moderate the content posted
+  by users.
+end note
+
+usecase "Moderate Questions and Answers" as UC7
+MOD_U --> UC7
+note right of UC7
+  Moderator can edit the content
+  for clarity, format, or to
+  remove inappropriate content.
+end note
+
+usecase "Edit Questions and Answers" as UC8
+MOD_U --> UC8
 
 @enduml
