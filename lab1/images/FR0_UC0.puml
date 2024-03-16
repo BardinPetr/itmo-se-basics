@@ -9,8 +9,7 @@ actor "Guest user" as GU
 
 actor Moderator as MOD_U
 
-' add system border
-rectangle StackExchange {
+package "StackExchange Site" {
 
     MOD_U -u-|> AU
 
