@@ -1,5 +1,5 @@
 @startuml
-title StackExchange UseCases
+title UseCases
 
 left to right direction
 
@@ -7,85 +7,82 @@ actor "Anonymous" as NAU
 actor "Authorized user" as AU
 actor "Guest user" as GU
 
-actor Asker as ASK_U
-actor Answerer as ANS_U
-actor Searcher as SEA_U
 actor Moderator as MOD_U
 
-ASK_U -u-|> AU
-ANS_U -u-|> AU
-ANS_U -l-|> GU
-SEA_U -u-|> NAU
-SEA_U -u-|> AU
-MOD_U -u-|> AU
+' add system border
+rectangle StackExchange {
 
-' text
-usecase "Create publication" as UCpub
-usecase "Use markup" as UCq_markup
-usecase "Attach media" as UCq_media
+    MOD_U -u-|> AU
 
-UCpub <.. UCq_markup : <<extend>>
-UCpub <.. UCq_media : <<extend>>
+    ' text
+    usecase "Create publication" as UCpub
+    usecase "Use markup" as UCq_markup
+    usecase "Attach media" as UCq_media
+
+    UCpub <.. UCq_markup : <<extend>>
+    UCpub <.. UCq_media : <<extend>>
 
 
-' create
-usecase "Assign tags" as UCq_tag
-usecase "Create Question" as UCcreate
+    ' create
+    usecase "Assign tags" as UCq_tag
+    usecase "Create Question" as UCcreate
 
-ASK_U --> UCcreate
-UCcreate ..> UCq_tag : <<include>>
-UCcreate ..> UCpub : <<include>>
+    AU --> UCcreate
+    UCcreate ..> UCq_tag : <<include>>
+    UCcreate ..> UCpub : <<include>>
+
+    ' answer
+    usecase "Answer Questions" as UCanswer
+
+    AU --> UCanswer
+    GU --> UCanswer
+    UCanswer ..> UCpub : <<include>>
 
 
-' answer
-usecase "Answer Questions" as UCanswer
+    ' vote
+    usecase "Vote on Questions and Answers" as UCvote
+    usecase "Rank Answers" as UCrank
+    usecase "Accept Answers" as UCaccept
 
-ANS_U --> UCanswer
-UCanswer ..> UCpub : <<include>>
+    AU --> UCvote
+    AU --> UCrank
+    UCrank ..> UCaccept : <<include>>
+    UCrank ..> UCvote : <<include>>
 
+    ' answers
+    usecase "Search questions" as UCsearch
+    usecase "Filter questions" as UCq_filter
+    usecase "Sort questions" as UCq_sort
+    usecase "List answers" as UCa_list
+    usecase "Sort answers by ranking" as UCa_sort
 
-' vote
-usecase "Vote on Questions and Answers" as UCvote
-usecase "Rank Answers" as UCrank
-usecase "Accept Answers" as UCaccept
+    NAU --> UCsearch
+    AU --> UCsearch
 
-AU --> UCvote
-ASK_U --> UCrank
-UCrank ..> UCaccept : <<include>>
-UCrank ..> UCvote : <<include>>
+    UCsearch <.. UCq_filter : <<extend>>
+    UCsearch <.. UCq_sort : <<extend>>
 
-' answers
-usecase "Search questions" as UCsearch
-usecase "Filter questions" as UCq_filter
-usecase "Sort questions" as UCq_sort
-usecase "List answers" as UCa_list
-usecase "Sort answers by ranking" as UCa_sort
+    UCsearch ..> UCa_list : <<include>>
+    UCa_list <.l. UCa_sort : <<extend>>
 
-SEA_U --> UCsearch
+    ' comments
+    usecase "Comment on Questions and Answers" as UCcomment
+    usecase "View comments" as UCcomment_view
+    usecase "Rank comments" as UCcomment_rank
 
-UCsearch <.. UCq_filter : <<extend>>
-UCsearch <.. UCq_sort : <<extend>>
+    AU ---> UCcomment
+    UCa_list <.. UCcomment_view : <<extend>>
+    UCcomment_view .r.> UCcomment_rank : <<include>>
 
-UCsearch ..> UCa_list : <<include>>
-UCa_list <.l. UCa_sort : <<extend>>
+    ' moderate
+    usecase "Moderate Questions and Answers" as UCmod
+    usecase "Edit text" as UCmod_edit
+    usecase "Ban posts" as UCmod_ban
 
-' comments
-usecase "Comment on Questions and Answers" as UCcomment
-usecase "View comments" as UCcomment_view
-usecase "Rank comments" as UCcomment_rank
+    MOD_U --> UCmod
+    UCmod <.. UCmod_edit  : <<extend>>
+    UCmod <.. UCmod_ban  : <<extend>>
 
-AU ---> UCcomment
-UCa_list <.. UCcomment_view : <<extend>>
-UCcomment_view .r.> UCcomment_rank : <<include>>
-
-' moderate
-usecase "Moderate Questions and Answers" as UCmod
-usecase "Edit text" as UCmod_edit
-usecase "Ban posts" as UCmod_ban
-
-MOD_U --> UCmod
-UCmod <.. UCmod_edit  : <<extend>>
-UCmod <.. UCmod_ban  : <<extend>>
-
+}
 
 @enduml
